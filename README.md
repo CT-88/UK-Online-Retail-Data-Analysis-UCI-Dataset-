@@ -103,23 +103,25 @@ This highlights a clear **Pareto effect** and informs targeted retention strateg
 ---
 
 ## 📁 Project Structure
+```text
 ├── data
-│ ├── raw_data.csv # Original dataset
-│ ├── clean_data.csv # Cleaned dataset
-│ ├── expanded_data.csv # Dataset with engineered features
-│ └── rfm_data.csv # Customer-level RFM dataset
+│   ├── raw_data.csv # Original dataset
+│   ├── clean_data.csv # Cleaned dataset
+│   ├── expanded_data.csv # Dataset with engineered features
+│   └── rfm_data.csv # Customer-level RFM dataset
 │
 ├── notebook
-│ ├── initial_data_processing.ipynb
-│ └── exploratory_data_analysis.ipynb
+│   ├── initial_data_processing.ipynb
+│   └── exploratory_data_analysis.ipynb
 │
 ├── reports
-│ ├── figures
-│ │ ├── basic_business_health
-│ │ ├── returns_cancellations_and_risk
-│ │ └── rfm_segmentation
-│ └── findings.md # Business findings & recommendations
+│   ├── figures
+│   │   ├── basic_business_health
+│   │   ├── returns_cancellations_and_risk
+│   │   └── rfm_segmentation
+│   └── findings.md # Business findings & recommendations
 │
 ├── pyproject.toml
 ├── uv.lock
 └── README.md
+```
