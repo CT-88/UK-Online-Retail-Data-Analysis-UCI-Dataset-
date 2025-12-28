@@ -80,6 +80,28 @@ All findings are summarized in a structured business report (`findings.md`).
 
 ---
 
+## 📊 Power BI Dashboard (Strategic Retail Intelligence)
+In addition to Python-based analysis, the project includes a Microsoft Power BI dashboard designed for **executive and strategic decision-making.**
+
+### Dashboard Purpose
+- Provide an interactive overview of business performance
+- Enable drill-down analysis by time, geography, product, and customer segment
+- Translate analytical results into business-friendly KPIs
+
+### Key Dashboard Features
+- Revenue, orders, and customer trend tracking
+- Geographic performance analysis
+- Product-level revenue and return insights
+- RFM-based customer segmentation visuals
+- Strategic KPIs aligned with business objectives
+
+The dashboard file is available as:
+```text
+reports/power_bi_dashboard/Strategic Retail Intelligence Dashboard.pbix
+```
+
+---
+
 ## 🧩 Customer Segmentation (RFM)
 Customers were segmented using RFM analysis, revealing strong revenue concentration:
 
@@ -105,10 +127,10 @@ This highlights a clear **Pareto effect** and informs targeted retention strateg
 ## 📁 Project Structure
 ```text
 ├── data
-│   ├── raw_data.csv # Original dataset
-│   ├── clean_data.csv # Cleaned dataset
-│   ├── expanded_data.csv # Dataset with engineered features
-│   └── rfm_data.csv # Customer-level RFM dataset
+│   ├── raw_data.csv                 # Original dataset
+│   ├── clean_data.csv               # Cleaned dataset
+│   ├── expanded_data.csv            # Dataset with engineered features
+│   └── rfm_data.csv                 # Customer-level RFM dataset
 │
 ├── notebook
 │   ├── initial_data_processing.ipynb
@@ -119,7 +141,12 @@ This highlights a clear **Pareto effect** and informs targeted retention strateg
 │   │   ├── basic_business_health
 │   │   ├── returns_cancellations_and_risk
 │   │   └── rfm_segmentation
-│   └── findings.md # Business findings & recommendations
+│   │
+│   ├── power_bi_dashboard
+│   │   ├── bi_tables                # Power BI data model tables
+│   │   └── Strategic Retail Intelligence Dashboard.pbix
+│   │
+│   └── findings.md                  # Business findings & recommendations
 │
 ├── pyproject.toml
 ├── uv.lock
